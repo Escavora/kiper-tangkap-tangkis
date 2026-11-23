@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiper Tangkap-Tangkis</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1>Kiper Tangkap-Tangkis</h1>
+    </header>
+
+    <section class="stage">
+      <!-- Raw webcam feed; hidden, drawn onto the canvas each frame -->
+      <video id="webcam" playsinline muted></video>
+      <canvas id="game-canvas" width="640" height="480"></canvas>
+    </section>
+
+    <section class="controls">
+      <button id="btn-start" type="button">Mulai</button>
+      <button id="btn-calibrate" type="button" disabled>Kalibrasi</button>
+      <button id="btn-record" type="button" disabled>Rekam</button>
+      <button id="btn-debug" type="button">Debug</button>
+    </section>
+
+    <a id="download-link" class="download" hidden>Unduh rekaman</a>
+  </main>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
